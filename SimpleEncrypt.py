@@ -132,13 +132,13 @@ def test():
     print (MyDecrypt(ct, key, iv))
     
     #testing MyFileEncrypt
-    path = r"C:\Users\thuyen23\Desktop\RSATest\test.txt"
+    path = r"%PATH%test.txt"
     ct, iv, key, ext = MyFileEncrypt(path)
     print('\nCiphertext:   ', ct, '\nIV:   ', iv,
           '\nKey:   ', key, '\nExtension:   ',ext)
     
     #testing MyFileDecrypt
-    filePath = r"C:\Users\thuyen23\Desktop\RSATest\test.enc"
+    filePath = r"%PATH%test.enc"
     pt = MyFileDecrypt(filePath, ext, key, iv)
     print('\nDecrypted plaintext: ', pt)
 
